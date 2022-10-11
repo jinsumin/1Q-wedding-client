@@ -15,7 +15,7 @@ const Viewer = () => {
     {
       id: 1,
       title: "video1",
-      src: "videos/hana-1q-video-sound.mp4",
+      src: "videos/hana-1q-celebration.mp4",
       description: "sample video of 1q wedding",
     },
     {
