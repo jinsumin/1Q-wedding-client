@@ -4,17 +4,6 @@ import Animation from "../components/animation";
 import { useEffect } from "react";
 
 const Main = () => {
-  useEffect(() => {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
-        });
-      });
-    });
-  });
-
   return (
     <div id="main-section">
       <section className="text-gray-600 body-font overflow-hidden">

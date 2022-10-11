@@ -5,6 +5,7 @@ import Player from "./player";
 import Recorder from "./recorder";
 import Main from "./main";
 import Canvas from "./canvas";
+import Viewer from "./viewer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <div>
         <Main />
+        <Viewer />
         <Canvas />
         <Recorder />
         <Player />

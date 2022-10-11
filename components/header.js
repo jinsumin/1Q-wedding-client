@@ -2,16 +2,16 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 export default function Header() {
-  useEffect(() => {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
-        });
-      });
-    });
-  });
+//   useEffect(() => {
+//     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//       anchor.addEventListener("click", function (e) {
+//         e.preventDefault();
+//         document.querySelector(this.getAttribute("href")).scrollIntoView({
+//           behavior: "smooth",
+//         });
+//       });
+//     });
+//   });
 
   return (
     <>
@@ -42,7 +42,7 @@ export default function Header() {
             </a>
             <a
               rel="noopener noreferrer"
-              href="#carousel-section"
+              href="#viewer-section"
               className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
             >
               축하영상
