@@ -14,7 +14,7 @@ export default function Player() {
   return (
     <div id="player-section">
       <section className="text-gray-600 body-font">
-        <div className="flex justify-center mx-20 mt-20">
+        <div className="container flex justify-center mx-20 mt-20">
           <div className="flex-col items-center place-items-center">
             <div>
               <input type="file" onChange={handleVideoUpload} />
