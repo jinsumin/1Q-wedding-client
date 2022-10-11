@@ -3,19 +3,19 @@ import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
 const Viewer = () => {
-  const videoRef = useRef();
+  // const videoRef = useRef();
 
-  useEffect(() => {
-    setTimeout(() => {
-      videoRef.current.play();
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     videoRef.current.play();
+  //   }, 5000);
+  // }, []);
 
   const videoProperties = [
     {
       id: 1,
       title: "video1",
-      src: "videos/hana-1q-wedding-celebration.mp4",
+      src: "videos/hana-1q-video-sound.mp4",
       description: "sample video of 1q wedding",
     },
     {
@@ -27,7 +27,7 @@ const Viewer = () => {
     {
       id: 3,
       title: "video3",
-      src: "videos/sample.mp4",
+      src: "videos/hana-1q-wedding-celebration.mp4",
       description: "sample video of 1q wedding",
     },
   ];
@@ -41,7 +41,7 @@ const Viewer = () => {
               return (
                 <Carousel.Item key={videoObject.id}>
                   <video
-                    ref={videoRef}
+                    // ref={videoRef}
                     controls
                     width="100%"
                     height="100%"
