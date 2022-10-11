@@ -16,9 +16,9 @@ export default function Home() {
       </Head>
       <div>
         <Main />
-        <Player />
         <Canvas />
         <Recorder />
+        <Player />
       </div>
     </Layout>
   );

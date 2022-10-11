@@ -42,6 +42,13 @@ export default function Header() {
             </a>
             <a
               rel="noopener noreferrer"
+              href="#carousel-section"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
+            >
+              축하영상
+            </a>
+            <a
+              rel="noopener noreferrer"
               href="#canvas-section"
               className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
             >
