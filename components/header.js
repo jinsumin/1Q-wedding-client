@@ -27,44 +27,44 @@ export default function Header() {
               // className="object-cover object-center rounded"
               alt="hero"
               src="/hana-3d-logo.png"
-              width="90%"
+              width="80%"
               height="100%"
             />
-            <span className="ml-3 text-xl">1Q WEDDING</span>
+            <span className="ml-3 text-xl text-teal-600">1Q WEDDING</span>
           </a>
           <nav className="items-stretch hidden space-x-3 md:flex">
             <a
               rel="noopener noreferrer"
               href="#main-section"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
             >
               HOME
             </a>
             <a
               rel="noopener noreferrer"
               href="#canvas-section"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
             >
               CANVAS
             </a>
             <a
               rel="noopener noreferrer"
               href="#recorder-section"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
             >
               RECORDER
             </a>
             <a
               rel="noopener noreferrer"
               href="#player-section"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-teal-600 border-teal-600"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
             >
               PLAYER
             </a>
             <a
               rel="noopener noreferrer"
               href="/settings"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
             >
               SETTINGS
             </a>
