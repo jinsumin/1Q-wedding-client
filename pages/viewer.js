@@ -45,7 +45,7 @@ const Viewer = () => {
                     controls
                     width="100%"
                     height="100%"
-                    loop
+                    // loop
                     // muted
                     src={require(`../public/${videoObject.src}`)}
                   />
