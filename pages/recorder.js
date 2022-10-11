@@ -1,6 +1,5 @@
 import React from "react";
 import Webcam from "react-webcam";
-import Layout from "../components/layout";
 
 const Recorder = () => {
   const webcamRef = React.useRef(null);
