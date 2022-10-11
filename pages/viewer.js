@@ -1,10 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import dynamic from "next/dynamic";
-// import videoURL from "../public/videos/sample.mp4";
-
-// const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 const Viewer = () => {
   const videoRef = useRef();
@@ -19,19 +15,19 @@ const Viewer = () => {
     {
       id: 1,
       title: "video1",
-      src: "../public/videos/sample.mp4",
+      src: "videos/sample.mp4",
       description: "sample video of 1q wedding",
     },
     {
       id: 2,
       title: "video2",
-      src: "https://www.youtube.com/watch?v=OEZc_c7A7Ko",
+      src: "videos/sample.mp4",
       description: "sample video of 1q wedding",
     },
     {
       id: 3,
       title: "video3",
-      src: "https://www.youtube.com/watch?v=OEZc_c7A7Ko",
+      src: "videos/sample.mp4",
       description: "sample video of 1q wedding",
     },
   ];
@@ -44,26 +40,15 @@ const Viewer = () => {
             {videoProperties.map((videoObject) => {
               return (
                 <Carousel.Item key={videoObject.id}>
-                  {/* <ReactPlayer
-                    url={videoObject.src}
-                    width="100%"
-                    heigh="100%"
-                    pip={true}
-                    controls={true}
-                    playing={false}
-                  /> */}
                   <video
                     ref={videoRef}
                     controls
                     width="100%"
                     height="100%"
                     loop
-                    muted
-                    src={require("../public/videos/sample.mp4")}
+                    // muted
+                    src={require(`../public/${videoObject.src}`)}
                   />
-                  {/* <video ref={videoRef} controls width="250" loop muted>
-                    <source src={videoObject.src} type="video/mp4" />
-                  </video> */}
                   <Carousel.Caption>
                     <h3>{videoObject.title}</h3>
                     <p>{videoObject.description}</p>
