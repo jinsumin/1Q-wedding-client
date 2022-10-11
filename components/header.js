@@ -15,20 +15,20 @@ export default function Header() {
 
   return (
     <>
-      <header className="p-4 bg-transparent text-gray-800 sticky top-0 z-50 shadow-2xl">
-        <div className="container flex justify-between h-16 mx-auto">
+      <header className="py-3 bg-transparent text-gray-800 sticky top-0 z-50 shadow-lg">
+        <div className="container flex justify-between h-10 mx-auto">
           <a
             rel="noopener noreferrer"
             href="#main-section"
             aria-label="Back to homepage"
-            className="flex items-center p-2"
+            className="flex items-center p-2 no-underline"
           >
             <Image
               // className="object-cover object-center rounded"
               alt="hero"
               src="/hana-3d-logo.png"
-              width="80%"
-              height="100%"
+              width="60%"
+              height="80%"
             />
             <span className="ml-3 text-xl text-teal-600">1Q WEDDING</span>
           </a>
@@ -36,42 +36,42 @@ export default function Header() {
             <a
               rel="noopener noreferrer"
               href="#main-section"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
               HOME
             </a>
             <a
               rel="noopener noreferrer"
               href="#viewer-section"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
               축하영상
             </a>
             <a
               rel="noopener noreferrer"
               href="#canvas-section"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
               CANVAS
             </a>
             <a
               rel="noopener noreferrer"
               href="#recorder-section"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
               RECORDER
             </a>
             <a
               rel="noopener noreferrer"
               href="#player-section"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
               PLAYER
             </a>
             <a
               rel="noopener noreferrer"
               href="/settings"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 focus:border-teal-600"
+              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
               SETTINGS
             </a>

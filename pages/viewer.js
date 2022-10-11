@@ -15,13 +15,13 @@ const Viewer = () => {
     {
       id: 1,
       title: "video1",
-      src: "videos/sample.mp4",
+      src: "videos/hana-1q-wedding-celebration.mp4",
       description: "sample video of 1q wedding",
     },
     {
       id: 2,
       title: "video2",
-      src: "videos/sample.mp4",
+      src: "videos/hana-1q-wedding-simulation.mp4",
       description: "sample video of 1q wedding",
     },
     {
