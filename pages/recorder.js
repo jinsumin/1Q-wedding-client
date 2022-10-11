@@ -1,5 +1,6 @@
 import React from "react";
 import Webcam from "react-webcam";
+import Layout from "../components/layout";
 
 const Recorder = () => {
   const webcamRef = React.useRef(null);
@@ -71,49 +72,55 @@ const Recorder = () => {
   }, [recordedChunks]);
 
   const videoConstraints = {
-    width: 1200,
+    width: 800,
     height: 480,
     facingMode: "user",
   };
 
   return (
     <>
-      <section className="text-gray-600 body-font">
-        <div className="flex justify-center mx-20 mt-20">
-          <div className="flex-col items-center place-items-center">
-            <div>
-              <Webcam
-                audio={false}
-                ref={webcamRef}
-                videoConstraints={videoConstraints}
-              />
-            </div>
-            <div className="mt-20 text-center">
-              {capturing ? (
-                <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                  <button onClick={handleStopCaptureClick}>Stop Capture</button>
-                </div>
-              ) : (
-                <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                  <button onClick={handleStartCaptureClick}>
-                    Start Capture
-                  </button>
-                </div>
-              )}
-              {recordedChunks.length > 0 && (
+      <Layout>
+        <div id="recorder-section">
+          <section className="text-gray-600 body-font">
+            <div className="flex justify-center mx-20 mt-20">
+              <div className="flex-col items-center place-items-center">
                 <div>
-                  <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                    <button onClick={handleDownload}>Download</button>
-                  </div>
-                  <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                    <button onClick={handleUpload}>Upload</button>
-                  </div>
+                  <Webcam
+                    audio={false}
+                    ref={webcamRef}
+                    videoConstraints={videoConstraints}
+                  />
                 </div>
-              )}
+                <div className="mt-20 text-center">
+                  {capturing ? (
+                    <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
+                      <button onClick={handleStopCaptureClick}>
+                        Stop Capture
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
+                      <button onClick={handleStartCaptureClick}>
+                        축하 영상 보내기
+                      </button>
+                    </div>
+                  )}
+                  {recordedChunks.length > 0 && (
+                    <div>
+                      <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
+                        <button onClick={handleDownload}>Download</button>
+                      </div>
+                      <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
+                        <button onClick={handleUpload}>Upload</button>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </Layout>
     </>
   );
 };

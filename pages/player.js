@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 import React, { useState } from "react";
+import Layout from "../components/layout";
 // import ReactPlayer from "react-player";
 
 export default function Player() {
@@ -12,16 +13,20 @@ export default function Player() {
   };
 
   return (
-    <div>
-      <input type="file" onChange={handleVideoUpload} />
-      <ReactPlayer
-        url={videoFilePath}
-        width="100%"
-        height="100%"
-        playing={true}
-        // muted={true}
-        controls={false}
-      />
-    </div>
+    <Layout>
+      <div id="player-section">
+        <section>
+          <input type="file" onChange={handleVideoUpload} />
+          <ReactPlayer
+            url={videoFilePath}
+            width="50%"
+            height="50%"
+            playing={true}
+            // muted={true}
+            controls={false}
+          />
+        </section>
+      </div>
+    </Layout>
   );
 }
