@@ -13,20 +13,18 @@ export default function Player() {
   };
 
   return (
-    <Layout>
-      <div id="player-section">
-        <section>
-          <input type="file" onChange={handleVideoUpload} />
-          <ReactPlayer
-            url={videoFilePath}
-            width="50%"
-            height="50%"
-            playing={true}
-            // muted={true}
-            controls={false}
-          />
-        </section>
-      </div>
-    </Layout>
+    <div id="player-section">
+      <section>
+        <input type="file" onChange={handleVideoUpload} />
+        <ReactPlayer
+          url={videoFilePath}
+          width="50%"
+          height="50%"
+          playing={true}
+          // muted={true}
+          controls={false}
+        />
+      </section>
+    </div>
   );
 }

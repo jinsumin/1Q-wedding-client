@@ -1,6 +1,17 @@
 import { useEffect } from "react";
 
 export default function Footer() {
+  useEffect(() => {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  });
+
   return (
     <>
       <footer className="bg-transparent text-gray-900">

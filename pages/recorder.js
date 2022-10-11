@@ -79,48 +79,46 @@ const Recorder = () => {
 
   return (
     <>
-      <Layout>
-        <div id="recorder-section">
-          <section className="text-gray-600 body-font">
-            <div className="flex justify-center mx-20 mt-20">
-              <div className="flex-col items-center place-items-center">
-                <div>
-                  <Webcam
-                    audio={false}
-                    ref={webcamRef}
-                    videoConstraints={videoConstraints}
-                  />
-                </div>
-                <div className="mt-20 text-center">
-                  {capturing ? (
+      <div id="recorder-section">
+        <section className="text-gray-600 body-font">
+          <div className="flex justify-center mx-20 mt-20">
+            <div className="flex-col items-center place-items-center">
+              <div>
+                <Webcam
+                  audio={false}
+                  ref={webcamRef}
+                  videoConstraints={videoConstraints}
+                />
+              </div>
+              <div className="mt-20 text-center">
+                {capturing ? (
+                  <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
+                    <button onClick={handleStopCaptureClick}>
+                      Stop Capture
+                    </button>
+                  </div>
+                ) : (
+                  <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
+                    <button onClick={handleStartCaptureClick}>
+                      축하 영상 보내기
+                    </button>
+                  </div>
+                )}
+                {recordedChunks.length > 0 && (
+                  <div>
                     <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                      <button onClick={handleStopCaptureClick}>
-                        Stop Capture
-                      </button>
+                      <button onClick={handleDownload}>Download</button>
                     </div>
-                  ) : (
                     <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                      <button onClick={handleStartCaptureClick}>
-                        축하 영상 보내기
-                      </button>
+                      <button onClick={handleUpload}>Upload</button>
                     </div>
-                  )}
-                  {recordedChunks.length > 0 && (
-                    <div>
-                      <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                        <button onClick={handleDownload}>Download</button>
-                      </div>
-                      <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                        <button onClick={handleUpload}>Upload</button>
-                      </div>
-                    </div>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             </div>
-          </section>
-        </div>
-      </Layout>
+          </div>
+        </section>
+      </div>
     </>
   );
 };
