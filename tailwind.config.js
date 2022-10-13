@@ -6,10 +6,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        hero: "url('../public/hana-background.jpeg')",
+      fontFamily: {
+        hanafont: ["HanaFont"],
+        sans: ["HanaFont", "sans-serif"],
       },
     },
   },
+  variants: {
+    extends: {
+      fontFamily: ["hover", "focus"],
+    },
+  },
   plugins: [],
+  corePlugins: {
+    fontFamily: true,
+  },
 };
