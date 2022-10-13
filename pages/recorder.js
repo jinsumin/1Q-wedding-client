@@ -17,7 +17,7 @@ const Recorder = () => {
       handleDataAvailable
     );
     mediaRecorderRef.current.start();
-  }, [webcamRef, setCapturing, mediaRecorderRef]);
+  }, [handleDataAvailable]);
 
   const handleDataAvailable = React.useCallback(
     ({ data }) => {
@@ -31,7 +31,7 @@ const Recorder = () => {
   const handleStopCaptureClick = React.useCallback(() => {
     mediaRecorderRef.current.stop();
     setCapturing(false);
-  }, [mediaRecorderRef, webcamRef, setCapturing]);
+  }, [mediaRecorderRef, setCapturing]);
 
   const handleDownload = React.useCallback(() => {
     if (recordedChunks.length) {
