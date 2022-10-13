@@ -11,56 +11,61 @@ const Main = () => {
 
   return (
     <div id="main-section">
-      <section className="text-gray-600 body-font overflow-hidden">
+      <section className="text-gray-600 body-font overflow-hidden bg-teal-200">
         <Image
-          className="absolute inset-0 h-full w-full object-cover opacity-30"
+          className="absolute inset-0 h-full w-full object-cover opacity-20"
           layout="fill"
           src="/hana-background.jpeg"
           alt="background"
         />
         <div className="px-5 py-24 mx-auto justify-items-center">
-          <div className="mt-44 bg-orange-300 flex flex-col">
-            <h1 className="items-center mb-14 text-black text-center">
+          <div className="mt-44 flex flex-col">
+            <h1 className="items-center mb-14 text-black text-center text-7xl">
               금융의 모든 것<br></br>토스에서 쉽고 간편하게
             </h1>
             <div class="flex flex-row justify-center">
-              <a
-                class="border"
-                type="button"
-                aria-disabled="false"
-                target="_blank"
-                href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
-                rel="noreferrer noopener"
-              >
-                <Image
-                  src={appStoreURL}
-                  width="40"
-                  height="40"
-                  className=""
-                  alt="app-store"
-                />
-                <div>App Store</div>
-              </a>
-              <a
-                class="p-button p-button--default p-button--inline p-button--fill p-button--large padding--l css-1hs38uh"
-                type="button"
-                aria-disabled="false"
-                target="_blank"
-                href="https://play.google.com/store/apps/details?id=viva.republica.toss"
-                rel="noreferrer noopener"
-              >
-                <Image
-                  src={playStoreURL}
-                  width="40"
-                  height="40"
-                  class="css-1m3khn2"
-                  alt="google-play"
-                />
-                Google Play
-              </a>
+              <div class="flex flex-row justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg">
+                <div>
+                  <a
+                    type="button"
+                    aria-disabled="false"
+                    target="_blank"
+                    href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src={appStoreURL}
+                      width="40"
+                      height="40"
+                      alt="app-store"
+                    />
+                  </a>
+                </div>
+                <div className="text-white">App Store</div>
+              </div>
+              <div class="flex flex-row justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg">
+                <div>
+                  <a
+                    type="button"
+                    aria-disabled="false"
+                    target="_blank"
+                    href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src={playStoreURL}
+                      width="40"
+                      height="40"
+                      alt="app-store"
+                    />
+                  </a>
+                </div>
+                <div className="text-white">Google Play</div>
+              </div>
             </div>
           </div>
         </div>
+        <Animation />
       </section>
     </div>
   );
