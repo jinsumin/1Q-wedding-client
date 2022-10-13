@@ -3,7 +3,7 @@ import Footer from "./footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-white font-hanafont">
+    <div className="bg-white">
       <Header />
       <div>{children}</div>
       <Footer />
