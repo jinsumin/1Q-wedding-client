@@ -22,7 +22,7 @@ const Main = () => {
         <div className="px-5 py-24 mx-auto justify-items-center">
           <div className=" flex flex-col items-center">
             <h1 className="items-center mb-14 text-black text-center text-7xl">
-              금융의 모든 것<br></br>토스에서 쉽고 간편하게
+              하나 1Q 웨딩에서<br></br>송금을 쉽고 간편하게
             </h1>
             <div class="flex flex-col items-center bg-white w-1/2 rounded-2xl">
               <div className="m-10">
