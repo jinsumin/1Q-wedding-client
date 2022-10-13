@@ -6,19 +6,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        hanafont: ["HanaFont"],
-        sans: ["HanaFont", "sans-serif"],
-      },
+      // fontFamily: {
+      //   hanafont: ["HanaFont"],
+      //   sans: ["HanaFont", "sans-serif"],
+      // },
     },
   },
-  variants: {
-    extends: {
-      fontFamily: ["hover", "focus"],
-    },
-  },
+  // variants: {
+  //   extends: {
+  //     fontFamily: ["hover", "focus"],
+  //   },
+  // },
   plugins: [],
-  corePlugins: {
-    fontFamily: true,
-  },
+  // corePlugins: {
+  //   fontFamily: true,
+  // },
 };
