@@ -12,7 +12,7 @@ const Main = () => {
 
   return (
     <div id="main-section">
-      <section className="text-gray-600 body-font overflow-hidden bg-teal-200">
+      <section className="text-gray-600 body-font overflow-hidden bg-cyan-900">
         <Image
           className="absolute inset-0 h-full w-full object-cover opacity-20"
           layout="fill"
