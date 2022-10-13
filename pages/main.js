@@ -19,11 +19,14 @@ const Main = () => {
           alt="background"
         />
         <div className="px-5 py-24 mx-auto justify-items-center">
-          <div className="mt-44 flex flex-col">
+          <div className="mt-44 flex flex-col items-center">
             <h1 className="items-center mb-14 text-black text-center text-7xl">
               금융의 모든 것<br></br>토스에서 쉽고 간편하게
             </h1>
-            <div class="flex flex-row justify-center">
+            <div class="flex flex-row justify-center bg-white w-1/2">
+              <div>
+                
+              </div>
               <div class="flex flex-row justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg">
                 <div>
                   <a
@@ -64,8 +67,27 @@ const Main = () => {
               </div>
             </div>
           </div>
+          <div className="flex flex-wrap justify-center">
+            <div className="items-center">
+              <a
+                href="#canvas-section"
+                className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+              >
+                <Animation width={100} height={100} />
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center">
+            <div className="items-center">
+              <a
+                href="#canvas-section"
+                className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+              >
+                <Animation width={100} height={100} />
+              </a>
+            </div>
+          </div>
         </div>
-        <Animation />
       </section>
     </div>
   );
